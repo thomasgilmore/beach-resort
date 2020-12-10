@@ -11,11 +11,14 @@ import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <>
+    <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/rooms/" component={Rooms} />
       <Route exact path="/rooms/:slug" component={SingleRoom} />
-    </div>
+      <Route component={Error} />
+    </Switch>
+    </>
   );
 }
 
