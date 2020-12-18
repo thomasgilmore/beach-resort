@@ -13,11 +13,11 @@ class RoomProvider extends Component {
     // getData
 
     componentDidMount(){
-        let rooms = this.formateData(items);
+        let rooms = this.formatData(items);
         console.log(rooms);
     }
 
-    formateData(items){
+    formatData(items){
         let tempItems = items.map(item => {
             let id = item.sys.id
             let images = item.fields.images.map(image => image.fields.file.url);
