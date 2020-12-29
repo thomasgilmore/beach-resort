@@ -25,7 +25,15 @@ export default function RoomFilter() {
                 {/* select type */}
                 <div className="form-group">
                     <label htmlFor="type">room type</label>
-                    <select name="type" id=""></select>
+                    <select 
+                        name="type" 
+                        id="type" 
+                        value={type} 
+                        className="form-control" 
+                        onChange={handleChange} 
+                    >
+                        
+                    </select>
                 </div>
                 {/* end select type */}
             </form>
