@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { RoomContext } from '../context';
 import Title from '../components/Title';
-import { DefaultContext } from 'react-icons';
+// import { DefaultContext } from 'react-icons';
 
 // get all unique values
 const getUnique = (items, value) => {
